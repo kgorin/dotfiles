@@ -14,7 +14,7 @@ fi
 
 brew tap homebrew/versions
 brew tap homebrew/dupes
-brew tap Goles/battery
+# brew tap Goles/battery
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -46,32 +46,26 @@ brew upgrade --all
 apps=(
     rvm
     nvm
-    mongodb
     bash-completion2
     coreutils
-    moreutils
+    # moreutils
     findutils
-    ffmpeg
-    fortune
-    ponysay
     git
     git-extras
-    hub
-    gnu-sed --with-default-names
+    # hub
     grep --with-default-names
     homebrew/completions/brew-cask-completion
     homebrew/dupes/grep
     homebrew/dupes/openssh
-    mtr
     autojump
-    imagemagick --with-webp
-    python
+    imagemagick
     source-highlight
     the_silver_searcher
     tree
-    ffmpeg --with-libvpx
     wget
     wifi-password
+    redis
+    tig
 )
 
 brew install "${apps[@]}"
