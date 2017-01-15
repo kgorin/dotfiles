@@ -7,37 +7,25 @@ brew tap caskroom/versions
 
 # Install packages
 apps=(
+    # kaleidoscope
     1password
-    gyazo
-    dropbox
-    google-drive
-    spectacle
-    flux
-    dash
-    imagealpha
-    imageoptim
-    evernote
-    iterm2
+    appcleaner
     atom
-    webstorm
-    firefox
-    firefoxnightly
+    bettertouchtool
+    dash
+    dropbox
+    github-desktop
     google-chrome
-    google-chrome-canary
-    malwarebytes-anti-malware
-    glimmerblocker
-    hammerspoon
-    kaleidoscope
-    macdown
-    opera
-    screenflow
-    spotify
+    istat-menus
+    iterm2
+    rescuetime
     skype
     slack
-    tower
-    transmit
-    elmedia-player
+    spectacle
+    sublime-text3
+    teamviewer
     utorrent
+    vlc
 )
 
 brew cask install "${apps[@]}"
