@@ -249,7 +249,8 @@ main() {
   unset BINARIES
 
   # Symlink online-check.sh
-  ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
+  #   Don't need it for now
+  # ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
 
   # Write out current crontab
   crontab -l > mycron
