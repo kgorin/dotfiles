@@ -203,6 +203,8 @@ done
 
 main() {
 
+  rsync --exclude ".DS_Store" -av --no-perms fonts/ ~/Library/Fonts/
+
   local i=''
   local sourceFile=''
   local targetFile=''
