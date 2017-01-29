@@ -162,10 +162,12 @@ echo "done"
 
 
 # Atom editor settings
-echo -n "Copying Atom settings.."
-mv -f ~/.atom ~/dotfiles_old/
-ln -s $HOME/dotfiles/atom ~/.atom
-echo "done"
+# *** Using sync-settings for now ***
+#
+# echo -n "Copying Atom settings.."
+# mv -f ~/.atom ~/dotfiles_old/
+# ln -s $HOME/dotfiles/atom ~/.atom
+# echo "done"
 
 
 declare -a FILES_TO_SYMLINK=(
