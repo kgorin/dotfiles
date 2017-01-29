@@ -13,10 +13,6 @@ set completion-ignore-case on
 # Immediately add a trailing slash when autocompleting symlinks to directories
 set mark-symlinked-directories on
 
-# Do not expand "~" to the home directory when completing. (The actual value passed on to the command still is expanded,
-# though. Which is good.) "Off" is the default value, but some servers override this
-set expand-tilde off
-
 # Flip through autocompletion matches with Shift-Tab
 "\e[Z": menu-complete
 
