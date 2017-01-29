@@ -175,7 +175,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/shell_exports'
   'shell/shell_functions'
   'shell/bash_profile'
-  'shell/bash_prompt'
+  # 'shell/bash_prompt'
   'shell/bashrc'
   'shell/zshrc'
   'shell/curlrc'
