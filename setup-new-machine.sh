@@ -20,8 +20,6 @@ cp ~/.extra ~/migration/home
 cp ~/.z ~/migration/home
 cp -R ~/.ssh ~/migration/home
 cp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist ~/migration  # wifi
-cp ~/Library/Preferences/net.limechat.LimeChat.plist ~/migration
-cp ~/Library/Preferences/com.tinyspeck.slackmacgap.plist ~/migration
 cp -R ~/Library/Services ~/migration # automator stuff
 cp -R ~/Documents ~/migration
 cp ~/.bash_history ~/migration # back it up for fun?

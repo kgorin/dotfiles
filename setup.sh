@@ -250,17 +250,19 @@ main() {
 
   unset BINARIES
 
+  # Don't need constant online-check for now
+
   # Symlink online-check.sh
   #   Don't need it for now
   # ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
 
   # Write out current crontab
-  crontab -l > mycron
-  # Echo new cron into cron file
-  echo "* * * * * ~/online-check.sh" >> mycron
-  # Install new cron file
-  crontab mycron
-  rm mycron
+  # crontab -l > mycron
+  # # Echo new cron into cron file
+  # echo "* * * * * ~/online-check.sh" >> mycron
+  # # Install new cron file
+  # crontab mycron
+  # rm mycron
 
 }
 
@@ -307,11 +309,12 @@ install_zsh () {
 # fi
 
 main
-# install_zsh
+install_zsh
 
 ###############################################################################
 # Atom                                                                        #
 ###############################################################################
+# Using sync-settings for now
 
 # Copy over Atom configs
 #cp -r atom/packages.list $HOME/.atom
@@ -321,14 +324,6 @@ main
 #apm install --packages-file $HOME/.atom/packages.list
 
 ###############################################################################
-# Zsh                                                                         #
-###############################################################################
-
-# Install Zsh settings
-ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
-
-
-###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
 
@@ -336,10 +331,7 @@ ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/dotfiles/iterm/themes/Solarized Dark.itermcolors"
-
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+open "${HOME}/dotfiles/iterm/themes/kirill_profile.itermcolors"
 
 # Reload zsh settings
 source ~/.zshrc
