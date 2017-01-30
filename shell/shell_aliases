@@ -10,12 +10,6 @@ alias sudo="sudo "
 alias o="open"
 alias oo="open ."
 alias e="$EDITOR"
-alias g="git"
-alias v="vim"
-alias gh="github"
-alias rm="trash"
-alias x+="chmod +x"
-alias -- +x="chmod +x"
 
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
@@ -30,9 +24,6 @@ alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
 alias ungz="gunzip -k"
-
-# Trim new lines and copy to clipboard
-alias trimcopy="tr -d '\n' | pbcopy"
 
 #
 # Time to upgrade `ls`
