@@ -54,11 +54,6 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Disable some menu bar icons: Time Machine, Volume and User
-for domain in ~/Library/Preferences/ByHost/com.apple.stytemuiserver.*; do
-  "/System/Library/CoreServices/Menu Extras/User.menu"
-done
-
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
@@ -75,9 +70,6 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 ###############################################################################
 # Interfaces: trackpad, mouse, keyboard, bluetooth, etc.
 ###############################################################################
-
-# Set a really fast keyboard repeat rate.
-defaults write -g KeyRepeat -int 0
 
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -105,9 +97,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Enable sub-pixel rendering on non-Apple LCDs.
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
 ###############################################################################
 # Finder
 ###############################################################################
@@ -128,12 +117,6 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Disable the warning when changing file extensions
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
-# Allow text-selection in Quick Look
-defaults write com.apple.finder QLEnableTextSelection -bool true
-
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Expand print panel by default
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
@@ -161,7 +144,7 @@ defaults write com.apple.dock orientation -string "right"
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
            "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-           "Terminal" "Twitter" "iCal"; do
+           "Terminal" "iCal"; do
            kill all "${app}" > /dev/null 2>&1
 done
 
