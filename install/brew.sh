@@ -44,8 +44,7 @@ brew upgrade --all
 # which version I'm using.
 
 apps=(
-    rvm
-    nvm
+    node
     bash-completion2
     coreutils
     # moreutils
