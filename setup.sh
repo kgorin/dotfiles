@@ -330,7 +330,7 @@ install_zsh
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Install the Solarized Dark theme for iTerm
+# Install the Custom theme for iTerm
 open "${HOME}/dotfiles/iterm/themes/kirill_profile.itermcolors"
 
 # Reload zsh settings
