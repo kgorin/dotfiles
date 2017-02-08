@@ -1,28 +1,28 @@
 #!/bin/bash
 
 # Install Caskroom
-brew tap caskroom/cask
-brew install brew-cask
-brew tap caskroom/versions
+# brew tap caskroom/cask
+# brew install brew-cask
+# brew tap caskroom/versions
 
 # Install packages
 apps=(
     # kaleidoscope
-    1password
+    # 1password
     appcleaner
-    atom
+    # atom
     bettertouchtool
     dash
     dropbox
     github-desktop
-    google-chrome
+    # google-chrome
     istat-menus
     iterm2
     rescuetime
-    skype
-    slack
+    # skype
+    # slack
     spectacle
-    sublime-text3
+    sublime-text
     teamviewer
     utorrent
     vlc
