@@ -33,7 +33,6 @@ brew upgrade --all
 # - Tree (http://mama.indstate.edu/users/ice/tree/): A directory listing utility
 #   that produces a depth indented listing of files.
 # - Tor ():
-# - git-extras (https://vimeo.com/45506445): Adds a shit ton of useful commands #   to git.
 # - autoenv (https://github.com/kennethreitz/autoenv): this utility makes it
 #   easy to apply environment variables to projects. I mostly use it for Go and
 #   Node.js projects. For Ruby projects, I just use Foreman or Forego.
@@ -50,7 +49,6 @@ apps=(
     # moreutils
     findutils
     git
-    git-extras
     # hub
     grep --with-default-names
     homebrew/completions/brew-cask-completion
