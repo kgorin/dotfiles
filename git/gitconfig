@@ -10,6 +10,7 @@
   prb = pull --rebase
   prbp = !git pull --rebase && git push
   com = checkout master
+  cod = checkout develop
   mrg = merge
 
 # So much color
@@ -40,19 +41,5 @@
 
 [push]
   default = current
-[filter "media"]
-  required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
-[credential]
-  helper = osxkeychain
-[filter "hawser"]
-  clean = git hawser clean %f
-  smudge = git hawser smudge %f
-  required = true
-[filter "lfs"]
-  clean = git lfs clean %f
-  smudge = git lfs smudge %f
-  required = true
 [core]
-  editor = nano
+	editor = atom -w
