@@ -1,3 +1,7 @@
+[user]
+  name = kgorin
+  email = machineshopflow@gmail.com
+
 [alias]
   cm = commit
   co = checkout
@@ -43,3 +47,8 @@
   default = current
 [core]
 	editor = atom -w
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
