@@ -54,7 +54,8 @@ fi
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
-  export EDITOR=/usr/bin/subl
+  export EDITOR=/usr/local/bin/atom
+  export BUNDLER_EDITOR=/usr/local/bin/atom
 
 #   Set default blocksize for ls, df, du
 #   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
