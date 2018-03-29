@@ -16,6 +16,7 @@
   com = checkout master
   cod = checkout develop
   mrg = merge
+  rbdv = !git checkout develop && git pull && git back && git rebase develop
 
 # So much color
 [color]
