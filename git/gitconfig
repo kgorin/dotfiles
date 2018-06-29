@@ -17,6 +17,7 @@
   cod = checkout develop
   mrg = merge
   rbdv = !git checkout develop && git pull && git back && git rebase develop
+  pushforce = !git push origin `eval git symbolic-ref --short -q HEAD` --force-with-lease
 
 # So much color
 [color]
