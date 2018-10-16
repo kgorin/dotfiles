@@ -4,8 +4,6 @@
 <dict>
 	<key>build</key>
 	<real>705</real>
-	<key>license</key>
-	<string>5539-9419-5994-9745-9747</string>
 	<key>preferences</key>
 	<dict>
 		<key>Battery_MebubarModeCharged</key>
