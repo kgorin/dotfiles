@@ -5,22 +5,22 @@
 # Ask for the administrator password upfront
 sudo -v
 
-# Check for Homebrew and install it if missing
-if test ! $(which brew)
-then
-  echo "Installing Homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+# # Check for Homebrew and install it if missing
+# if test ! $(which brew)
+# then
+#   echo "Installing Homebrew..."
+#   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# fi
 
-brew tap homebrew/versions
-brew tap homebrew/dupes
+# brew tap homebrew/versions
+# brew tap homebrew/dupes
 # brew tap Goles/battery
 
 # Make sure we’re using the latest Homebrew
-brew update
+# brew update
 
-# Upgrade any already-installed formulae
-brew upgrade --all
+# # Upgrade any already-installed formulae
+# brew upgrade --all
 
 # Install the Homebrew packages I use on a day-to-day basis.
 #
@@ -51,11 +51,11 @@ apps=(
     git
     # hub
     grep --with-default-names
-    homebrew/completions/brew-cask-completion
-    homebrew/dupes/grep
-    homebrew/dupes/openssh
+    brew-cask-completion
+    grep
+    openssh
     autojump
-    imagemagick
+    # imagemagick
     source-highlight
     the_silver_searcher
     tree

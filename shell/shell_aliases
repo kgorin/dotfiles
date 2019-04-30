@@ -97,5 +97,5 @@ alias localrc="if [[ -a ~/.zsh.local ]]; then ${EDITOR} ~/.zsh.local; fi"
 alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
 alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
 
-alias rubo_a_diff='git diff --cached --name-only | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs rubocop -a'
-alias rubo_diff='git diff --cached --name-only | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs rubocop'
+alias rubo_a_diff='git add . && git diff --cached --name-only | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs rubocop -a'
+alias rubo_diff='git add . && git diff --cached --name-only | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs rubocop'

@@ -12,13 +12,13 @@ apps=(
     appcleaner
     # atom
     bettertouchtool
-    dash
+    # dash
     dropbox
     github-desktop
     # google-chrome
-    istat-menus
+    # istat-menus
     iterm2
-    rescuetime
+    # rescuetime
     # skype
     # slack
     spectacle
@@ -31,4 +31,4 @@ apps=(
 brew cask install "${apps[@]}"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
