@@ -13,12 +13,14 @@
 #     ./node_modules/.bin/webpack --config webpack.local.config.js
 #
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+
 if test ! $(which nvm)
 then
   echo "Installing a stable version of Node..."
 
   # Install the latest stable version of node
-  nvm install stable
+  nvm install node
 
   # Switch to the installed version
   nvm use node
