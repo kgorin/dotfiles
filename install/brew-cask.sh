@@ -7,25 +7,15 @@
 
 # Install packages
 apps=(
-    # kaleidoscope
     # 1password
     appcleaner
     # atom
-    bettertouchtool
-    # dash
-    dropbox
+    # bettertouchtool
     github-desktop
     # google-chrome
-    # istat-menus
     iterm2
-    # rescuetime
-    # skype
     # slack
-    spectacle
     sublime-text
-    teamviewer
-    utorrent
-    vlc
 )
 
 brew cask install "${apps[@]}"

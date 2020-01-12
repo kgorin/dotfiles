@@ -5,12 +5,12 @@
 # Ask for the administrator password upfront
 sudo -v
 
-# # Check for Homebrew and install it if missing
-# if test ! $(which brew)
-# then
-#   echo "Installing Homebrew..."
-#   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# fi
+# Check for Homebrew and install it if missing
+if test ! $(which brew)
+then
+  echo "Installing Homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # brew tap homebrew/versions
 # brew tap homebrew/dupes
@@ -19,8 +19,8 @@ sudo -v
 # Make sure we’re using the latest Homebrew
 # brew update
 
-# # Upgrade any already-installed formulae
-# brew upgrade --all
+# Upgrade any already-installed formulae
+brew upgrade --all
 
 # Install the Homebrew packages I use on a day-to-day basis.
 #
@@ -43,7 +43,6 @@ sudo -v
 # which version I'm using.
 
 apps=(
-    node
     bash-completion2
     coreutils
     # moreutils
@@ -54,15 +53,13 @@ apps=(
     brew-cask-completion
     grep
     openssh
-    autojump
     # imagemagick
     source-highlight
-    the_silver_searcher
-    tree
     wget
     wifi-password
-    redis
     tig
+    redis
+    postgres
 )
 
 brew install "${apps[@]}"
