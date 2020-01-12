@@ -60,9 +60,13 @@ apps=(
     tig
     redis
     postgres
+    fzf
+    zsh-syntax-highlighting
 )
 
 brew install "${apps[@]}"
+
+$(brew --prefix)/opt/fzf/install
 
 # Remove outdated versions from the cellar
 brew cleanup
