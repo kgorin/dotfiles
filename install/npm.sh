@@ -13,7 +13,14 @@
 #     ./node_modules/.bin/webpack --config webpack.local.config.js
 #
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+# This file doesn't work well, NVM should be installed after zshrc etc was created
+
+
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 
 if test ! $(which nvm)
 then
