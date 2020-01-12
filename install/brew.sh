@@ -12,12 +12,12 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-brew tap homebrew/versions
-brew tap homebrew/dupes
+# brew tap homebrew/versions
+# brew tap homebrew/dupes
 # brew tap Goles/battery
 
 # Make sure we’re using the latest Homebrew
-brew update
+# brew update
 
 # Upgrade any already-installed formulae
 brew upgrade --all
@@ -43,7 +43,6 @@ brew upgrade --all
 # which version I'm using.
 
 apps=(
-    node
     bash-completion2
     coreutils
     # moreutils
@@ -51,18 +50,16 @@ apps=(
     git
     # hub
     grep --with-default-names
-    homebrew/completions/brew-cask-completion
-    homebrew/dupes/grep
-    homebrew/dupes/openssh
-    autojump
-    imagemagick
+    brew-cask-completion
+    grep
+    openssh
+    # imagemagick
     source-highlight
-    the_silver_searcher
-    tree
     wget
     wifi-password
-    redis
     tig
+    redis
+    postgres
 )
 
 brew install "${apps[@]}"

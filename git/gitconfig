@@ -18,6 +18,7 @@
   mrg = merge
   rbdv = !git checkout develop && git pull && git back && git rebase develop
   pushforce = !git push origin `eval git symbolic-ref --short -q HEAD` --force-with-lease
+	rbm = !git com && git pull && git back && git rebase master
 
 # So much color
 [color]
@@ -49,8 +50,11 @@
   default = current
 [core]
 	editor = atom -w
+	excludesfile = ~/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
