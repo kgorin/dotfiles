@@ -8,9 +8,9 @@
 #
 
 # Set computer name
-COMPUTERNAME="Kirill Gorin's MBP"
-HOSTNAME='kirill_mbp'
-LOCALHOSTNAME='kirill_mbp'
+COMPUTERNAME="Kirill Gorin's iMac"
+HOSTNAME='kirill_imac'
+LOCALHOSTNAME='kirill_imac'
 
 # Ask for the administrator password upfront
 sudo -v
@@ -108,7 +108,7 @@ chflags nohidden ~/Library
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Always open everything in Finder's column view. This is important.
+# Always open everything in Finder's List View. This is important.
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show hidden files and file extensions by default
@@ -132,11 +132,11 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write com.apple.dock show-process-indicators -bool true
 
 # Add several spacers
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+# defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock orientation -string "right"
+# defaults write com.apple.dock autohide -bool true
+# defaults write com.apple.dock orientation -string "right"
 
 ###############################################################################
 # Do some clean up work.

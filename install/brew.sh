@@ -20,7 +20,7 @@ fi
 # brew update
 
 # Upgrade any already-installed formulae
-brew upgrade --all
+# brew upgrade --all
 
 # Install the Homebrew packages I use on a day-to-day basis.
 #
@@ -34,7 +34,7 @@ brew upgrade --all
 #   that produces a depth indented listing of files.
 # - Tor ():
 # - autoenv (https://github.com/kennethreitz/autoenv): this utility makes it
-#   easy to apply environment variables to projects. I mostly use it for Go and
+#   easy to apply environmen  t variables to projects. I mostly use it for Go and
 #   Node.js projects. For Ruby projects, I just use Foreman or Forego.
 # - autojump (https://github.com/joelthelion/autojump): a faster way to navigate
 #   your filesystem.
@@ -49,7 +49,7 @@ apps=(
     findutils
     git
     # hub
-    grep --with-default-names
+    grep
     brew-cask-completion
     grep
     openssh
