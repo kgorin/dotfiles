@@ -1,8 +1,8 @@
 # ~Nick Plekhanov's~ Kirill Gorin's Dotfiles
 
-This is a collection of dotfiles and scripts I use for customizing OS X to my liking and setting up the software development tools I use on a day-to-day basis. They should be cloned to your home directory so that the path is `~/dotfiles/`.  The included setup script creates symlinks from your home directory to the files which are located in `~/dotfiles/`.
+This is a collection of dotfiles and scripts I use for customizing OS X to my liking and setting up the software development tools I use on a day-to-day basis. They should be cloned to your home directory so that the path is `~/dotfiles/`. The included setup script creates symlinks from your home directory to the files which are located in `~/dotfiles/`.
 
-![Terminal.app](https://raw.github.com/nicksp/dotfiles/master/iterm/nick-terminal.png)
+![Terminal.app](https://raw.github.com/kgorin/dotfiles/master/iterm/kirill-terminal.png)
 
 The setup script is smart enough to back up your existing dotfiles into a `~/dotfiles_old/` directory if you already have any dotfiles of the same name as the dotfile symlinks being created in your home directory.
 
@@ -29,7 +29,7 @@ So, to recap, the install script will:
 ## Installation
 
 ```sh
-$ git clone https://github.com/nicksp/dotfiles.git ~/dotfiles
+$ git clone https://github.com/kgorin/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 $ chmod +x setup.sh
 $ ./setup.sh
@@ -40,13 +40,13 @@ $ ./setup.sh
 Alternatively, you can install this into `~/dotfiles` remotely without Git using curl:
 
 ```sh
-sh -c "`curl -fsSL https://raw.github.com/nicksp/dotfiles/master/remote-setup.sh`"
+sh -c "`curl -fsSL https://raw.github.com/kgorin/dotfiles/master/remote-setup.sh`"
 ```
 
 Or, using wget:
 
 ```sh
-sh -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/nicksp/dotfiles/master/remote-setup.sh`"
+sh -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/kgorin/dotfiles/master/remote-setup.sh`"
 ```
 
 ## Customize
@@ -74,8 +74,8 @@ as the `git` user credentials, e.g.:
 
 ```sh
 [user]
-  name = Nick Plekhanov
-  email = nick@example.com
+  name = Kirill Gorin
+  email = me@ex.com
 ```
 
 ## OS X Defaults
@@ -84,7 +84,11 @@ My favorite part of this repo is the [set-defaults](osx/set-defaults.sh) script 
 
 ## Resources
 
-I actively watch the following repositories and add the best changes to this repository:
+Heavily inspired by:
+
+- [Nick Plekhanov's Dotfiles](https://github.com/nicksp/dotfiles)
+
+Other:
 
 - [GitHub ❤ ~/](http://dotfiles.github.com/)
 - [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
