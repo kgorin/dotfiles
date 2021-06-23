@@ -19,6 +19,7 @@
   rbdv = !git checkout develop && git pull && git back && git rebase develop
   pushforce = !git push origin `eval git symbolic-ref --short -q HEAD` --force-with-lease
 	rbm = !git com && git pull && git back && git rebase master
+  brd = branch -D
 
 # So much color
 [color]
@@ -49,7 +50,7 @@
 [push]
   default = current
 [core]
-	editor = atom -w
+	editor = code -w
 	excludesfile = ~/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
